@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "templates";
 
 *,
 *::before,
@@ -23,13 +24,7 @@ body {
     rgba(255, 255, 255, 1) 50%
   );
 }
-.close {
-  display: none;
-}
 
-.show {
-  display: block;
-}
 // modal
 
 .modal {
@@ -97,69 +92,6 @@ body {
   transition: 0.5s;
 }
 
-.title {
-  font-size: 30px;
-  line-height: 45px;
-  text-align: center;
-  font-weight: 400;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-@media (max-width: 576px) {
-  .title {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-.sub-title {
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  color: #72787d;
-  margin-top: 20px;
-}
-@media (max-width: 768px) {
-  .sub-title {
-    font-size: 16px;
-    line-height: 28px;
-  }
-}
-@media (max-width: 576px) {
-  .sub-title {
-    font-size: 14px;
-    line-height: 25px;
-  }
-}
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 150px;
-}
-@media (max-width: 576px) {
-  .section {
-    margin-top: 75px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section {
-    margin-top: 75px;
-  }
-}
-
-@media (max-width: 992px) {
-  .section {
-    margin-top: 100px;
-  }
-}
 .wrapper {
   margin: 0 auto;
   display: flex;
@@ -168,14 +100,7 @@ body {
   padding: 0 25px 0 25px;
   font-family: "Inter", sans-serif;
 }
-// line
-.line {
-  max-width: 1088px;
-  height: 1px;
-  background: #eef2f3;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
+
 // header
 header {
   margin-top: 30px;
@@ -507,15 +432,7 @@ h3 {
   min-height: 120px;
   padding: 20px;
 }
-.delivery_item_descr_title {
-  font-size: 18px;
-  line-height: 24px;
-}
-.delivery_item_descr_text {
-  font-size: 16px;
-  line-height: 24px;
-  color: #72787d;
-}
+
 .delivery_item_img {
   margin-right: 15px;
 }
@@ -531,13 +448,24 @@ h3 {
       font-size: 12px;
       line-height: 18px;
     }
-    .delivery_item_descr_title {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .delivery_item_descr_text {
-      font-size: 12px;
-      line-height: 18px;
-    }
   }
+}
+
+.reliability_title_img {
+  transform: translate(-15px, -15px);
+}
+.reliability_item_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.reliability_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 325px;
+  margin: 20px;
 }
