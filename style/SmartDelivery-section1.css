@@ -1,0 +1,59 @@
+h3 {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: Inter;
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  display: block;
+  max-width: 818px;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.btns-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-img {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.main-img img {
+  max-width: 100%;
+}
+
+.cars-img {
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.cars-img img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=SmartDelivery-section1.css.map */
