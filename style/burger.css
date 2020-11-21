@@ -1,0 +1,35 @@
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: #112950dc;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+/*# sourceMappingURL=burger.css.map */

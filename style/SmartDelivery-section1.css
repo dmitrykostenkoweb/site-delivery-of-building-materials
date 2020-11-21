@@ -1,29 +1,32 @@
 h3 {
+  font-family: Inter;
   text-decoration: none;
   font-weight: 400;
-  font-family: Inter;
-  font-size: 50px;
-  line-height: 65px;
   text-align: center;
+  line-height: 1.2em;
   display: block;
   max-width: 818px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: calc( 20px + 64 * ((100vw - 320px) / 1440));
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 768px) {
   h3 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: calc(20px + 30 * (100vw / 1440));
   }
 }
 
-.btns-wrapper {
+@media (min-width: 1440px) {
+  h3 {
+    font-size: 50px;
+  }
+}
+
+.btns__conatanier {
   margin-top: 30px;
   width: 100%;
   display: -webkit-box;
@@ -41,7 +44,7 @@ h3 {
 
 .main-img {
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .main-img img {
@@ -50,10 +53,10 @@ h3 {
 
 .cars-img {
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .cars-img img {
   max-width: 100%;
 }
-/*# sourceMappingURL=SmartDelivery-section1.css.map */
+/*# sourceMappingURL=smartDelivery-section1.css.map */

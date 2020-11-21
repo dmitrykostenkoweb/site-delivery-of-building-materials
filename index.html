@@ -9,6 +9,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/templates.css" />
+    <link rel="stylesheet" href="./style/modal.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/burger.css" />
+    <link rel="stylesheet" href="./style/smartDelivery-section1.css" />
   </head>
   <body>
     <div class="content-wrapper">
@@ -118,21 +123,28 @@
             </svg>
             <h1>СтройКонтроль</h1>
           </div>
-          <ul class="navigation">
-            <li class="navigation__item"><a href="#">Главная</a></li>
-            <li class="navigation__item"><a href="#">О нас</a></li>
-            <li class="navigation__item"><a href="#">Продукция</a></li>
-            <li class="navigation__item"><a href="#">Надёжность</a></li>
-            <li class="navigation__item"><a href="#">Клиенты</a></li>
-            <li class="navigation__item"><a href="#">Связаться с нами</a></li>
+          <ul class="navbar">
+            <li class="navbar__item"><a href="#">Главная</a></li>
+            <li class="navbar__item"><a href="#">О нас</a></li>
+            <li class="navbar__item"><a href="#">Продукция</a></li>
+            <li class="navbar__item"><a href="#">Надёжность</a></li>
+            <li class="navbar__item"><a href="#">Клиенты</a></li>
+            <li class="navbar__item"><a href="#">Связаться с нами</a></li>
           </ul>
+
           <button class="btn-order" type="button">Заказать демо</button>
+          <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
         </nav>
       </header>
-      <!-- --- -->
+      <!-- section1: -->
+      <!-- Smart delivery       -->
       <section class="section">
         <h3>Умная доставка материалов для сложных строительных площадок</h3>
-        <div class="btns-wrapper">
+        <div class="btns__conatanier">
           <button class="btn-order" type="button">Заказать демо</button>
           <button class="btn-detail" type="button">Подробнее</button>
         </div>
@@ -243,43 +255,46 @@
         </div>
       </section>
       <!-- --- -->
+      <!-- section2: -->
+      <!-- Building Is Chaos--->
       <section class="section">
         <h5 class="title">Строительство - это хаос</h5>
-        <div class="text">
+        <div class="text mt-20">
           Хаос может быть удивительной творческой силой, воздвигающая новые
           здания из пыли. Хаос вызывает несчастные случаи, задержки и потери. Он
           вводит проекты в стресс и разочарование. Это означает, что вы
           действительно не контролируете ситуацию.
         </div>
-        <div class="chaos_img">
-          <img src="./img/chaos.png" alt="" />
-        </div>
+
+        <img src="./img/chaos.png" alt="" />
       </section>
+      <!-- --- -->
+      <!-- section3: -->
+      <!-- It's time to put things in order..--->
       <section class="section">
         <h5 class="title">
           Пора навести порядок на вашей стройплощадке <br />
           и взять под контроль свой проект
         </h5>
-        <div class="control_descr_wrapper">
-          <div class="control_descr_block">
-            <div style="text-align: start" class="title">
+        <div class="control-desc__container">
+          <div class="control-desc_text">
+            <div style="text-align: left" class="title">
               Мы заботимся о доставке на стройплощадку и о людях, которые на них
               рассчитывают
             </div>
-            <div style="text-align: start" class="sub-title">
+            <div style="text-align: left" class="sub-title">
               Мы знаем всё о гордости от сияющего нового здания. Нам также
               известно всё о разочаровании от попыток завершить проект в срок и
               в рамках бюджета.
             </div>
-            <div class="control_descr_block_slogan yellow_underline">
-              Мы здесь, чтобы помочь.
-            </div>
+            <div class="text yellow_underline">Мы здесь, чтобы помочь.</div>
           </div>
-          <div class="control_descr_img">
-            <img src="./img/control.png" alt="" />
-          </div>
+          <img class="mt-20" src="./img/control.png" alt="" />
         </div>
       </section>
+      <!-- --- -->
+      <!-- section4: -->
+      <!-- brands-->
       <section class="section">
         <div class="brand-wrapper">
           <img src="./img/brand-besix.png" alt="" />
@@ -290,80 +305,80 @@
           <img src="./img/brand-skanska.png" alt="" />
         </div>
       </section>
-      <div class="line"></div>
+      <!-- --- -->
+      <hr />
+      <!-- section5: -->
+      <!-- What is StroyControl-->
       <section class="section">
         <div class="title">Что такое СтройКонтроль?</div>
         <div class="sub-title">
           СтройКонтроль - это интеллектуальная система управления доставкой,
-          <br />
           предоставляющая информацию и контроль материалов на сложных
-          строительных <br />
-          площадках в режиме реального времени.
+          строительных площадках в режиме реального времени.
         </div>
         <!-- ---- -->
-        <div class="description_item_wrapper">
-          <div class="description_item-text">
-            <div class="description_item-text_title">
-              Отслеживайте доставку по всей цепочке поставок
+        <div class="descriptions__wrapper">
+          <div class="description__container">
+            <div class="description-text__wrapper">
+              <div class="description-text__title">
+                Отслеживайте доставку по всей цепочке поставок
+              </div>
+              <div class="description-text">
+                От поставщика до субподрядчика - вы всегда знаете, где находятся
+                ваши материалы, благодаря чему обычные отходы уходят в прошлое и
+                сокращаются несчастные случаи на месте.
+              </div>
             </div>
-            <div class="description_item-text_text">
-              От поставщика до субподрядчика - вы всегда знаете, где <br />
-              находятся ваши материалы, благодаря чему обычные отходы <br />
-              уходят в прошлое и сокращаются несчастные случаи на месте.
-            </div>
-          </div>
-          <div class="description_item_img">
             <img src="./img/descr-car.png" alt="" />
           </div>
-        </div>
-        <!-- ---- -->
-        <!-- ---- -->
-        <div class="description_item_wrapper">
-          <div class="description_item_img">
-            <img src="./img/descr-people.png" alt="" />
-          </div>
-          <div class="description_item-text">
-            <div class="description_item-text_title">
-              Оптимизируйте и контролируйте свое прибытие на место
-            </div>
-            <div class="description_item-text_text">
-              Транспортные средства доставки прибывают в фиксированные
-              промежутки времени в заранее назначенные отсеки, где разгрузочное
-              оборудование готово и ждет их.
+          <!-- ---- -->
+          <!-- ---- -->
+          <div class="description__container">
+            <img class="order1" src="./img/descr-people.png" alt="" />
+            <div class="description-text__wrapper">
+              <div class="description-text__title">
+                Оптимизируйте и контролируйте свое прибытие на место
+              </div>
+              <div class="description-text">
+                Транспортные средства доставки прибывают в фиксированные
+                промежутки времени в заранее назначенные отсеки, где
+                разгрузочное оборудование готово и ждет их.
+              </div>
             </div>
           </div>
-        </div>
-        <!-- ---- -->
-        <!-- ---- -->
-        <div class="description_item_wrapper">
-          <div class="description_item-text">
-            <div class="description_item-text_title">
-              Возьмите под контроль данные в режиме реального времени
+          <!-- ---- -->
+          <!-- ---- -->
+          <div class="description__container">
+            <div class="description-text__wrapper">
+              <div class="description-text__title">
+                Возьмите под контроль данные в режиме реального времени
+              </div>
+              <div class="description-text">
+                Интеллектуальная отчетность дает вам возможность принимать
+                решения в зависимости от того, как обстоят дела в данный момент.
+                Больше никаких ручных отчетов по заливке бетона или ежемесячной
+                проверки 10.000 накладных со счетами, все это доступно онлайн
+                без каких-либо усилий.
+              </div>
             </div>
-            <div class="description_item-text_text">
-              Интеллектуальная отчетность дает вам возможность принимать решения
-              в зависимости от того, как обстоят дела в данный момент. Больше
-              никаких ручных отчетов по заливке бетона или ежемесячной проверки
-              10.000 накладных со счетами, все это доступно онлайн без
-              каких-либо усилий.
-            </div>
-          </div>
-          <div class="description_item_img">
             <img src="./img/descr-scientist.png" alt="" />
           </div>
         </div>
         <!-- ---- -->
       </section>
+      <!-- ---- -->
+      <!-- section6: -->
+      <!-- Delivery just got easier-->
       <section class="section">
         <div class="title">Доставка стала проще</div>
-        <div class="sub-title">
+        <div class="sub-title mt-20">
           Мы позаботимся обо всех ваших различных поставках и их многочисленных
           специализированных требованиях к разгрузке.
         </div>
-        <div class="delivery_wrapper">
+        <div class="delivery__container mt-50">
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -392,7 +407,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
+            <div class="delivery-item__text">
               <div class="item-title">Бетон</div>
               <div class="item-text">
                 Поставки бетона точно планируются, а его состояние
@@ -402,8 +417,8 @@
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -428,17 +443,17 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Утилизация отходов</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Утилизация отходов</div>
+              <div class="item-text mt-20">
                 Отходы контролируются и сортируются, а заполненность контейнеров
                 отслеживается в цифровом виде.
               </div>
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -472,9 +487,9 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Опалубка</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Опалубка</div>
+              <div class="item-text mt-20">
                 Вся опалубка отслеживается от прибытия до отправления, а ее
                 состояние контролируется, что сводит к минимуму потери и
                 повреждения.
@@ -482,8 +497,8 @@
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -510,17 +525,17 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Сборные панели</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Сборные панели</div>
+              <div class="item-text mt-20">
                 Сборные панели прибывают по очереди, их хранение на месте
                 отслеживается, а их установка планируется и контролируется.
               </div>
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -575,17 +590,17 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Фасады</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Фасады</div>
+              <div class="item-text mt-20">
                 Элементы фасада поступают последовательно, их сборка
                 контролируется, а перемещение отслеживается.
               </div>
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -610,17 +625,17 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Отделка</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Отделка</div>
+              <div class="item-text mt-20">
                 Материалы поступают точно в срок, маркируются и детально
                 отслеживаются для установки.
               </div>
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -655,9 +670,9 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Строительные леса</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Строительные леса</div>
+              <div class="item-text mt-20">
                 Строительные леса отслеживаются от получения до хранения,
                 использования и возврата, поэтому всегда ясно, что на месте и
                 где.
@@ -665,8 +680,8 @@
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -691,17 +706,17 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Оборудование</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Оборудование</div>
+              <div class="item-text mt-20">
                 Оборудование и операторы гарантированно доступны в случае
                 необходимости, а их рабочее состояние отслеживается.
               </div>
             </div>
           </div>
           <!-- ---- -->
-          <div class="delivery_item">
-            <div class="delivery_item_img">
+          <div class="delivery__item">
+            <div class="delivery-item__img">
               <svg
                 width="48"
                 height="48"
@@ -727,22 +742,27 @@
                 </defs>
               </svg>
             </div>
-            <div class="delivery_item_descr">
-              <div class="item-title">Электрика и сантехника</div>
-              <div class="item-text">
+            <div class="delivery-item__text">
+              <div class="item-title mt-20">Электрика и сантехника</div>
+              <div class="item-text mt-20">
                 Доставка осуществляется в точной последовательности для сложной
                 установки, что сокращает или устраняет необходимость в хранении.
               </div>
             </div>
           </div>
         </div>
-        <div class="and_many_more">
-          <span class="yellow_underline">...и все остальные материалы,</span>
-          <span>которые поступают или покидают вашу площадку</span>
+        <div>
+          <span class="yellow_underline text"
+            >...и все остальные материалы,</span
+          >
+          <span class="text">которые поступают или покидают вашу площадку</span>
         </div>
       </section>
+      <!-- ---- -->
+      <!-- section7: -->
+      <!-- Reliability-->
       <section class="section">
-        <div class="title">
+        <h4 class="title">
           Надёжность
           <svg
             class="reliability_title_img"
@@ -757,7 +777,7 @@
               fill="#232B30"
             />
           </svg>
-        </div>
+        </h4>
         <div class="sub-title">
           Благодаря надёжному строительству выигрывают все - муниципальные
           органы выполняют свои обязанности перед гражданами, инвесторы получают
@@ -892,8 +912,8 @@
           </div>
           <!-- ---- -->
         </div>
-        <div class="reliability_footer">
-          <div class="reliability_footer_img">
+        <div class="reliability__footer">
+          <div class="reliability-footer__img">
             <svg
               width="40"
               height="40"
@@ -908,33 +928,36 @@
               />
             </svg>
           </div>
-          <div class="reliability_footer_text">
+          <div class="reliability-footer__text text">
             Надёжная конструкция СтройКонтроль входит в стандартную
             комплектацию.
           </div>
           <button class="btn-detail" type="button">Подробнее</button>
         </div>
       </section>
+      <!-- ---- -->
+      <!-- section8: -->
+      <!-- Application-->
       <section class="section application_section">
-        <div class="application_section_inner">
-          <div class="application_description_list">
+        <div class="application__desc">
+          <div class="application-desc__list">
             <div class="title">Создан для строительства</div>
 
-            <p class="application_item-title">Хорошо виден в любых условиях</p>
+            <p class="item-title">Хорошо виден в любых условиях</p>
             <span class="item-text"
               >Независимо от того, солнечно или темно, найдется подходящий режим
               экрана</span
             >
 
-            <p class="application_item-title">Поддержка международных языков</p>
+            <p class="item-title">Поддержка международных языков</p>
             <span class="item-text"
               >На современной стройке работают люди со всего мира. Язык не
               является проблемой для СтройКонтроля.</span
             >
 
-            <p class="application_item-title">
-              Работает на любом устройстве - мобильном телефоне, планшете,
-              ноутбук
+            <p class="item-title">
+              Работает на любом устройстве: <br />
+              мобильном телефоне, планшете, ноутбуке
             </p>
             <span class="item-text"
               >Люди на разных должностях используют разные устройства.
@@ -943,7 +966,7 @@
               живого проекта на настенные экраны.</span
             >
           </div>
-          <div class="application_img">
+          <div class="application__img">
             <svg
               width="606"
               height="493"
@@ -975,7 +998,7 @@
             </svg>
           </div>
         </div>
-        <div class="application_buttons">
+        <div class="application__buttons-wrap">
           <button class="btn-order" type="button">Заказать демо</button>
 
           <button class="btn-detail" type="button">Подробнее</button>
@@ -1106,6 +1129,35 @@
             </div>
           </div>
           <!-- ---- -->
+        </div>
+      </section>
+      <!-- ---- -->
+      <!-- section10: -->
+      <!-- How to work with us-->
+      <section class="section">
+        <div class="working__container"></div>
+        <div class="working-img__container">
+          <div style="align-items: left" class="title mt-20">
+            Как с нами работать
+          </div>
+          <div style="align-items: left" class="sub-title mt-20">
+            Начать работу со СтройКонтроль легко, достаточно заказать
+            демо-версию.
+          </div>
+          <img class="mt-20" src="./img/working.png" alt="" />
+        </div>
+        <div class="working-list__container">
+          <!-- --- -->
+          <div class="working-list__item">
+            <div class="working-list__rectangle">
+              <span>1</span>
+            </div>
+            <div class="working-list__text">
+              <div class="item-title"></div>
+              <div class="item-text"></div>
+            </div>
+          </div>
+          <!-- --- -->
         </div>
       </section>
     </div>

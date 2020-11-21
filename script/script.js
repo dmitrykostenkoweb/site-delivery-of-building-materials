@@ -28,3 +28,14 @@ modal.addEventListener("click", (event) => {
     closeModal();
   }
 });
+
+// burger
+const burger = document.querySelector(".burger"),
+  nav = document.querySelector(".navbar");
+function showBurger() {
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
+  });
+}
+showBurger();

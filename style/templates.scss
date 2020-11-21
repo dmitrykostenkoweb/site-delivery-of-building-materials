@@ -1,3 +1,5 @@
+@import "mixins";
+
 *,
 *::before,
 *::after {
@@ -8,6 +10,7 @@
 }
 // all styles for sections
 .section {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,67 +53,71 @@
     rgba(255, 255, 255, 1) 50%
   );
 }
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////  text  ////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 .title {
-  font-size: 30px;
-  line-height: 45px;
+  text-decoration: none;
+  @include adaptive-font(30, 20);
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1.5em;
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-@media (max-width: 576px) {
-  .title {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-.text {
-  // margin-top: 16px;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  font-weight: 400;
-  // margin-bottom: 40px;
-}
 .sub-title {
-  font-size: 20px;
-  line-height: 32px;
+  @include adaptive-font(20, 12);
+  line-height: 1.5em;
   text-align: center;
+  font-weight: 400;
   color: #72787d;
-  margin-top: 20px;
-}
-@media (max-width: 768px) {
-  .sub-title {
-    font-size: 16px;
-    line-height: 28px;
-  }
-}
-@media (max-width: 576px) {
-  .sub-title {
-    font-size: 14px;
-    line-height: 25px;
-  }
+  max-width: 50%;
 }
 
+.text {
+  @include adaptive-font(20, 12);
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  max-width: 70%;
+}
+
+.item-title {
+  @include adaptive-font(18, 10);
+  line-height: 1.5em;
+  white-space: nowrap;
+}
+.item-text {
+  @include adaptive-font(16, 8);
+  line-height: 1.5em;
+  color: #72787d;
+}
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 // line
-.line {
-  max-width: 1088px;
+hr {
   height: 1px;
-  background: #eef2f3;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  background: #484848;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .mt-50 {
   margin-top: 50px;
 }
-// three columns in one block - columns-one-block
+.mt-20 {
+  margin-top: 20px;
+}
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+//  three columns in one block - columns-one-block//
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 .columns-one-block__wrapper {
   display: flex;
   align-items: center;
@@ -121,48 +128,36 @@
 .columns-one-block__inner {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   max-width: 350px;
-  margin: 20px;
+  margin: 10px;
+  text-align: center;
 }
 .columns-one-block__img {
 }
-.item-title {
-  font-size: 18px;
-  line-height: 24px;
-  white-space: nowrap;
-  margin-top: 20px;
-}
-.item-text {
-  font-size: 16px;
-  line-height: 24px;
-  color: #72787d;
-  margin-top: 20px;
-}
 
-@media (max-width: 576px) {
-  .item-title {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .item-text {
-    font-size: 12px;
-    line-height: 18px;
-    white-space: wrap;
-  }
-}
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 
-// Buttons
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+/////////////////// Buttons///////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 .btn-detail {
-  width: 140px;
-  height: 35px;
+  padding: 10px;
   background: white;
   border: 1px solid #dadedf;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   color: black;
   white-space: nowrap;
   margin: 10px;
+  @include adaptive-font(14, 10);
+  font-weight: 400;
   transition: 0.3s;
 }
 .btn-detail:hover {
@@ -171,15 +166,16 @@
 }
 
 .btn-order {
-  width: 140px;
-  height: 35px;
+  padding: 10px;
   background: black;
   border: 1px solid #212b31;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   color: white;
   white-space: nowrap;
   margin: 10px;
+  @include adaptive-font(14, 10);
+  font-weight: 400;
   transition: 0.3s;
 }
 .btn-order:hover {
