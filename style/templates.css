@@ -200,6 +200,10 @@ hr {
   margin-top: 20px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .columns-one-block__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

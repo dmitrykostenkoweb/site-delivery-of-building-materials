@@ -1,0 +1,104 @@
+.working__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.working-img__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.working-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.working-list__rectangle {
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.working-list__rectangle span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #72787d;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .working-list__rectangle span {
+    font-size: calc( 10px + 23 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 768px) {
+  .working-list__rectangle span {
+    font-size: calc(10px + 6 * (100vw / 1440));
+  }
+}
+
+@media (min-width: 1440px) {
+  .working-list__rectangle span {
+    font-size: 16px;
+  }
+}
+
+.working-list__text {
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+@media (max-width: 600px) {
+  .working-list__rectangle {
+    width: 20px;
+    height: 20px;
+  }
+  .working-list__text {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=working-section9.css.map */

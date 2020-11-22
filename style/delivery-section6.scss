@@ -1,0 +1,21 @@
+.delivery__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery__item {
+  display: flex;
+  max-width: 330px;
+  min-height: 120px;
+  padding: 20px;
+}
+
+.delivery-item__img {
+  margin-right: 15px;
+}
+.delivery-item__text {
+}

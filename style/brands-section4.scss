@@ -1,0 +1,11 @@
+.brand-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 20px;
+  }
+}

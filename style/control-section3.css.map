@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACvB,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,MAAM;CACxB;;AACD,AAAA,kBAAkB,CAAC;EACjB,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,KAAK;CACjB",
+    "sources": [
+        "control-section3.scss"
+    ],
+    "names": [],
+    "file": "control-section3.css"
+}

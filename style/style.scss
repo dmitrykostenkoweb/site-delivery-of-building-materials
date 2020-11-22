@@ -7,6 +7,18 @@ img {
   max-width: 100%;
   margin: 0 auto;
 }
+.buttons-wrap {
+  max-width: 300px;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+@media (max-width: 690px) {
+  .buttons-wrap {
+    margin: 20px;
+  }
+}
 
 .content-wrapper {
   margin: 0 auto;
@@ -22,239 +34,13 @@ img {
 @import "burger";
 @import "header";
 @import "smartDelivery-section1";
-// control
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-.control-desc__container {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.control-desc_text {
-  margin: 0 auto;
-  max-width: 600px;
-}
+@import "control-section3";
+@import "brands-section4";
+@import "descriptions-section5";
+@import "delivery-section6";
+@import "reliability-section7";
+@import "application-section8";
+@import "working-section9";
+@import "choose-section10";
 
-// brand
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-.brand-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 
-  img {
-    margin: 20px;
-  }
-}
-
-// description
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-.descriptions__wrapper {
-  max-width: 80%;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.description__container {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.description-text__wrapper {
-  max-width: 600px;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.description-text__title {
-  text-align: center;
-  @include adaptive-font(20, 14);
-  line-height: 1.5em;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.description-text {
-  @include adaptive-font(18, 12);
-  line-height: 1.5em;
-  color: #72787d;
-}
-@media (max-width: 768px) {
-  .order1 {
-    order: 1;
-  }
-  .description__container {
-    margin-top: 20px;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-// delivery
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-.delivery__container {
-  margin: 0 auto;
-  max-width: 1440px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.delivery__item {
-  display: flex;
-  max-width: 330px;
-  min-height: 120px;
-  padding: 20px;
-}
-
-.delivery-item__img {
-  margin-right: 15px;
-}
-.delivery-item__text {
-}
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-// reliability
-
-.reliability_title_img {
-  transform: translate(-15px, -15px);
-}
-
-.reliability__footer {
-  max-width: 1056px;
-  margin-top: 20px;
-  background: #f6f8f9;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 40px;
-  text-align: center;
-}
-.reliability-footer__img {
-  margin-right: 25px;
-}
-.reliability-footer__text {
-  margin-right: 50px;
-}
-@media (max-width: 768px) {
-  .reliability__footer {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .reliability-footer__img {
-    margin-right: 0;
-  }
-  .reliability-footer__text {
-    margin-right: 0;
-  }
-}
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-// application
-
-.application_section {
-  max-width: 1440px;
-  background-color: #212b31;
-  color: white;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-}
-.application__desc {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.application-desc__list {
-  margin: 20px;
-  max-width: 600px;
-  text-align: left;
-}
-
-.application__img {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  overflow: hidden;
-  svg {
-    max-width: 100%;
-  }
-}
-@media (max-width: 690px) {
-  .application_img {
-    flex-grow: 0;
-    margin-left: 20px;
-  }
-  .application_description_list {
-    margin: 10px;
-  }
-}
-
-.application__buttons-wrap {
-  max-width: 300px;
-  margin: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-@media (max-width: 690px) {
-  .application_buttons {
-    margin: 20px;
-  }
-}
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///////////////////////////////////////////////////
-// working
-.working__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-.working-img__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-///////////////////
-.working-list__rectangle {
-  width: 40px;
-  height: 40px;
-  border: solid 1px black;
-
-  span {
-    font-size: 16px;
-    color: #72787d;
-    font-weight: 600;
-  }
-}
