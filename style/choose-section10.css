@@ -35,10 +35,14 @@
   margin-right: 16px;
 }
 
+.choose-reasons-item__img img {
+  min-width: 50px;
+}
+
 .choose-review__container {
   position: relative;
   max-width: 620px;
-  background: #f6f8f9;
+  background: #c0c0c0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,14 +56,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
-}
-
-.choose-review__bg-img {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  opacity: .8;
+  padding: 2vw;
+  margin: 2vw;
+  border-radius: 5px;
 }
 
 .choose-review__text {

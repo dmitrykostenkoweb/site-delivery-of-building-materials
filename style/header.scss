@@ -23,13 +23,21 @@ nav {
   align-items: center;
   justify-content: space-around;
 }
-@media screen and (max-width: 576px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
+.btn-header{
+  margin-left: 5vw;
+}
+@media (max-width: 375px) {
+  .btn-header {
+    display: none;
   }
 }
-
+.navbar__wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .navbar {
   list-style: none;
   display: flex;

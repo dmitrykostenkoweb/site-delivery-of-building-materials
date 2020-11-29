@@ -11,8 +11,10 @@ img {
   max-width: 300px;
   margin: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 690px) {
   .buttons-wrap {
@@ -25,9 +27,12 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 25px 0 25px;
+  padding: 0 2vw;
   font-family: "Inter", sans-serif;
 }
+@media (max-width: 690px) {
+}
+
 @import "mixins";
 @import "modal";
 @import "templates";
@@ -42,5 +47,56 @@ img {
 @import "application-section8";
 @import "working-section9";
 @import "choose-section10";
+@import "awards-section11";
 
+.ready__container {
+  max-width: 1056px;
+  background-image: url("../img/bg-ready.png");
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ready__text {
+}
 
+/////////////////////////////
+.footer__top {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 20px;
+  p {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+.footer-menu__item {
+  margin: 20px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  a {
+    margin-left: -15px;
+  }
+}
+address {
+  padding: 20px;
+  font-size: 15px;
+}

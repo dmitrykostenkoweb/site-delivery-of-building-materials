@@ -26,4 +26,8 @@
 .delivery-item__img {
   margin-right: 15px;
 }
+
+.delivery-item__img img {
+  min-width: 50px;
+}
 /*# sourceMappingURL=delivery-section6.css.map */
